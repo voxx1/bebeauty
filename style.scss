@@ -25,6 +25,7 @@
 
 #toggler {
     margin-bottom: 40px;
+    border: 1px solid #B28B84;
 }
 .navbar-toggler-icon {
     background-image: url(images/toggler2.svg) !important;
@@ -49,11 +50,49 @@
     top: 55%;
 
   }
+  a {
+    position: relative;
+    color: #000;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    color: #B28B84;
+    -webkit-transform: scale(1.15);
+    transform: scale(1.15);
+    -webkit-transition: 0.2s ease-in-out;
+    transition: 0.2s ease-in-out;
+  }
+  
+  a::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #B28B84;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+  }
+  
+  a:hover::before {
+    transform: scaleX(1);
+  }
   .welcome-p {
     font-size: 1.5rem;
   }
   .welcome-title {
     font-size: 2.1rem;
+  }
+  .showme {
+    opacity: 1 !important;
+  }
+  .fadedown {
+    opacity: 0;
+    -webkit-transition: all 1s ease;
+    transition: all 1s ease;
   }
 
   .about {
@@ -72,10 +111,40 @@
         }
         
   } 
+  .bg-left {
+    background: linear-gradient(to left, #fff 0%, #fff 80%, #C0C0C0 80%);
+  }
+  .parallax {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+  
+  .img1 {
+    background-image: url("images/beauty2.jpg");
+    height: 300px;
+    -o-object-fit: cover;
+    object-fit: cover;
+    background-position: center;
+    background-size: cover;
+    margin: 40px 0 40px 0;
+  }
   .about-img {
       width: 100%;
-      height: 300px;
+      height: auto;
       margin-top: 25px;
+      -webkit-box-shadow: 24px 24px 0px 0px rgba(178, 139, 132, 1);
+-moz-box-shadow: 24px 24px 0px 0px rgba(178, 139, 132, 1);
+box-shadow: 24px 24px 0px 0px rgba(178, 139, 132, 1);
+  }
+  .about-img-info {
+      text-align: center;
+      padding: 10px;
+      margin-top: 20px;
   }
 
   .middle-line {
@@ -176,6 +245,7 @@
     }
 }
 .zabiegi-item {
+    margin: 30px 0;
 h1 {
     margin: 30px;
 }
@@ -183,6 +253,7 @@ h1 {
 img {
     height: 240px;
     width: 340px;
+
 }}
 .szkolenia {
     text-align: left;
@@ -245,7 +316,7 @@ h1 {
 .list {
 text-align: center;
 img {
-        max-width: 90%;
+        max-width: 80%;
         height: auto;
         margin-top: 30px;
         margin-bottom: 20px;
@@ -253,7 +324,7 @@ img {
 
 .container {
     text-align: center;
-    margin-top: 40px;
+    margin-top: 30px;
     .col-sm-5 {
     margin-bottom: 40px;
 }}
@@ -265,10 +336,31 @@ img {
       width: 360px;
     }
   }
+
+  @media (min-width: 800px) {
+    .cennik {
+      margin: 30px auto;
+      width: 780px;
+
+    }
+  }
+
   @media (min-width: 900px) {
     .carousel-item img {
       height: 500px;
     }
+  }
+
+  @media (min-width:1200px) {
+      .wave {
+        margin-bottom: -60px;
+      }
+      footer {
+          margin-top: -100px;
+      }
+      .nav-item {
+        margin: 0 20px;
+      }
   }
   @media (min-width: 2000px) {
     .wrapper {

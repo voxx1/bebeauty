@@ -25,6 +25,7 @@ body {
 
 #toggler {
   margin-bottom: 40px;
+  border: 1px solid #B28B84;
 }
 
 .navbar-toggler-icon {
@@ -52,12 +53,58 @@ body {
   top: 55%;
 }
 
+a {
+  position: relative;
+  color: #000;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #B28B84;
+  -webkit-transform: scale(1.15);
+  transform: scale(1.15);
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+}
+
+a::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #B28B84;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  -webkit-transition: -webkit-transform 0.3s ease;
+  transition: -webkit-transform 0.3s ease;
+  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, -webkit-transform 0.3s ease;
+}
+
+a:hover::before {
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+}
+
 .welcome-p {
   font-size: 1.5rem;
 }
 
 .welcome-title {
   font-size: 2.1rem;
+}
+
+.showme {
+  opacity: 1 !important;
+}
+
+.fadedown {
+  opacity: 0;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
 }
 
 .about {
@@ -79,10 +126,43 @@ body {
   margin-top: 15px;
 }
 
+.bg-left {
+  background: -webkit-gradient(linear, right top, left top, from(#fff), color-stop(80%, #fff), color-stop(80%, #C0C0C0));
+  background: linear-gradient(to left, #fff 0%, #fff 80%, #C0C0C0 80%);
+}
+
+.parallax {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.img1 {
+  background-image: url("images/beauty2.jpg");
+  height: 300px;
+  -o-object-fit: cover;
+  object-fit: cover;
+  background-position: center;
+  background-size: cover;
+  margin: 40px 0 40px 0;
+}
+
 .about-img {
   width: 100%;
-  height: 300px;
+  height: auto;
   margin-top: 25px;
+  -webkit-box-shadow: 24px 24px 0px 0px #b28b84;
+  box-shadow: 24px 24px 0px 0px #b28b84;
+}
+
+.about-img-info {
+  text-align: center;
+  padding: 10px;
+  margin-top: 20px;
 }
 
 .middle-line {
@@ -204,6 +284,10 @@ span.middle-line:after {
   margin-top: 60px;
 }
 
+.zabiegi-item {
+  margin: 30px 0;
+}
+
 .zabiegi-item h1 {
   margin: 30px;
 }
@@ -284,7 +368,7 @@ span.middle-line:after {
 }
 
 .list img {
-  max-width: 90%;
+  max-width: 80%;
   height: auto;
   margin-top: 30px;
   margin-bottom: 20px;
@@ -292,7 +376,7 @@ span.middle-line:after {
 
 .container {
   text-align: center;
-  margin-top: 40px;
+  margin-top: 30px;
 }
 
 .container .col-sm-5 {
@@ -306,9 +390,28 @@ span.middle-line:after {
   }
 }
 
+@media (min-width: 800px) {
+  .cennik {
+    margin: 30px auto;
+    width: 780px;
+  }
+}
+
 @media (min-width: 900px) {
   .carousel-item img {
     height: 500px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .wave {
+    margin-bottom: -60px;
+  }
+  footer {
+    margin-top: -100px;
+  }
+  .nav-item {
+    margin: 0 20px;
   }
 }
 
