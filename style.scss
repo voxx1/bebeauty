@@ -10,6 +10,7 @@
 
   body {
       font-family: "Cardo", sans-serif;
+      font-style: italic;
   }
 
 
@@ -25,7 +26,7 @@
 
 #toggler {
     margin-bottom: 40px;
-    border: 1px solid #B28B84;
+    border: 1px solid #ceb8ab;
 }
 .navbar-toggler-icon {
     background-image: url(images/toggler2.svg) !important;
@@ -57,7 +58,7 @@
   }
   
   a:hover {
-    color: #B28B84;
+    color: #ceb8ab;
     -webkit-transform: scale(1.15);
     transform: scale(1.15);
     -webkit-transition: 0.2s ease-in-out;
@@ -72,7 +73,7 @@
     height: 2px;
     bottom: 0;
     left: 0;
-    background-color: #B28B84;
+    background-color: #ceb8ab;
     transform: scaleX(0);
     transition: transform 0.3s ease;
   }
@@ -111,9 +112,7 @@
         }
         
   } 
-  .bg-left {
-    background: linear-gradient(to left, #fff 0%, #fff 80%, #C0C0C0 80%);
-  }
+
   .parallax {
     position: relative;
     display: -webkit-box;
@@ -137,9 +136,9 @@
       width: 100%;
       height: auto;
       margin-top: 25px;
-      -webkit-box-shadow: 24px 24px 0px 0px rgba(178, 139, 132, 1);
--moz-box-shadow: 24px 24px 0px 0px rgba(178, 139, 132, 1);
-box-shadow: 24px 24px 0px 0px rgba(178, 139, 132, 1);
+      -webkit-box-shadow: 24px 24px 0px 0px #ceb8ab;
+-moz-box-shadow: 24px 24px 0px 0px #ceb8ab;
+box-shadow: 24px 24px 0px 0px #ceb8ab;
   }
   .about-img-info {
       text-align: center;
@@ -158,7 +157,7 @@ box-shadow: 24px 24px 0px 0px rgba(178, 139, 132, 1);
   span.middle-line:before {
     content: '';
     position: absolute;
-    background-color: #B28B84;
+    background-color: #ceb8ab;
     width: 50px;
     height: 3px;
     top: 50%;
@@ -168,7 +167,7 @@ box-shadow: 24px 24px 0px 0px rgba(178, 139, 132, 1);
   span.middle-line:after {
     content: '';
     position: absolute;
-    background-color: #B28B84;
+    background-color: #ceb8ab;
     width: 50px;
     height: 3px;
     top: 50%;
@@ -176,8 +175,8 @@ box-shadow: 24px 24px 0px 0px rgba(178, 139, 132, 1);
   }
   .contact-bottom {
       width: 100%;
-      height: 400px;
-      background-color: #B28B84;
+      height: 350px;
+      background-color: #ceb8ab;
       text-align: center;
       color: white;
       .fa-arrow-up {
@@ -213,6 +212,12 @@ box-shadow: 24px 24px 0px 0px rgba(178, 139, 132, 1);
     }
 }
 
+  .word {
+    margin: auto;
+    color: white;
+    font-size: 35px;
+    display: none;
+  }
 .cennik {
     text-align: center;
     
@@ -231,7 +236,6 @@ box-shadow: 24px 24px 0px 0px rgba(178, 139, 132, 1);
         text-align: center;
         font-size: 19px;
         padding: 10px 30px;
-        margin-top: 60px;
     }
 }
 
@@ -249,21 +253,20 @@ box-shadow: 24px 24px 0px 0px rgba(178, 139, 132, 1);
 h1 {
     margin: 30px;
 }
-
 img {
     height: 240px;
     width: 340px;
 
 }}
+
+
 .szkolenia {
-    text-align: left;
-    margin: 20px;
     h1 {
         font-weight: 600;
         font-size: 33px;
     }
     .szkolenia-item {
-        margin-bottom: 30px;
+        padding-bottom: 30px;
       
     }
     p {
@@ -278,10 +281,25 @@ img {
         height: auto;
         margin-top: 30px;
     }
-    .item-color {
-        background: linear-gradient(to right, #fff 0%, #fff 70%, #C0C0C0 70%);
-    }
 }
+.col-lg-4 img {
+    width: 100%; 
+   height: 350px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.col-lg-4 img:hover {
+    -webkit-transform: scale(1.4);
+            transform: scale(1.4);
+            -webkit-transition: 0.2s ease-in-out;
+            transition: 0.2s ease-in-out;
+  }
+  
+  .col-lg-4 img:hover {
+    cursor: pointer;
+    z-index: 4;
+  }
 
 .szkolenia-info {
         text-align: left;
@@ -290,7 +308,7 @@ img {
     }
 
 .pink {
-    background: #B28B84;
+    background: #ceb8ab;
     padding: 10px;
     color: white;
 }
@@ -302,9 +320,14 @@ img {
         font-weight: 600;
         margin-bottom: 30px;
         text-align: center;
+        margin-top: 40px;
     }
 }
 
+.kontakt {
+    margin-top: 60px;
+    text-align: center;
+}
 
 .gallery {
     text-align: center;
@@ -312,6 +335,7 @@ h1 {
     text-align: center;
     font-weight: 600;
     font-size: 35px;
+    margin-top: 50px;
 }}
 .list {
 text-align: center;
@@ -323,8 +347,7 @@ img {
 }}
 
 .container {
-    text-align: center;
-    margin-top: 30px;
+    margin-top: 45px;
     .col-sm-5 {
     margin-bottom: 40px;
 }}
@@ -336,13 +359,41 @@ img {
       width: 360px;
     }
   }
+  @media (max-width: 600px) {
+    .contact-bottom {
+        height: 450px;
+  }
+}
 
+@media (max-width: 767px) {
+    .map {
+        margin-top: 30px;
+    }
+}
+
+  @media (min-width: 600px) {
+    .zabiegi-item:hover {
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
+    -webkit-transition: 0.2s ease-in-out;
+    transition: 0.2s ease-in-out;
+    cursor: pointer;
+    }
+  }
   @media (min-width: 800px) {
     .cennik {
       margin: 30px auto;
       width: 780px;
 
     }
+  }
+  @media (min-width: 768px) {
+    .bg-left {
+        background: linear-gradient(to left, #fff 0%, #fff 80%, #C0C0C0 80%);
+      }
+      .bg-right {
+        background: linear-gradient(to right, #fff 0%, #fff 80%, #C0C0C0 80%);
+      }
   }
 
   @media (min-width: 900px) {
@@ -351,9 +402,52 @@ img {
     }
   }
 
+  @media (min-width: 992px) {
+    .szkolenia-info {
+        width: 93%;
+    }
+    .szkolenia-item {
+        width: 93%;
+    }
+    .middle-text {
+        background: #ceb8ab;
+        margin: 0 auto;
+        width: 36%;
+        opacity: 0.9;
+        padding: 10px;
+    }
+    .welcome-p {
+        display: none;
+    }
+    .word {
+      display: block;
+  }
+  } 
+  @media (max-width: 991px) {
+    .col-lg-4 img {
+        width: 100%;
+    }
+
+
+  }
+  @media (min-width: 740px) and (max-width: 991px) {
+    .col-lg-4 img {
+        width: 700px;
+        margin: 30px auto;
+
+    }
+  }
+
+
+  @media (min-width: 1000px) {
+      .regulamin {
+        width: 950px;
+        margin: 40px auto;
+      }
+    }
   @media (min-width:1200px) {
       .wave {
-        margin-bottom: -60px;
+        margin-bottom: -90px;
       }
       footer {
           margin-top: -100px;
