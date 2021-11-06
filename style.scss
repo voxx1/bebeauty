@@ -140,6 +140,11 @@
 -moz-box-shadow: 24px 24px 0px 0px #ceb8ab;
 box-shadow: 24px 24px 0px 0px #ceb8ab;
   }
+  .about-img:hover {
+    transform: scale(0.9);
+    transform: scale(0.9);
+	transform: scale(0.9);
+  }
   .about-img-info {
       text-align: center;
       padding: 10px;
@@ -220,7 +225,13 @@ box-shadow: 24px 24px 0px 0px #ceb8ab;
   }
 .cennik {
     text-align: center;
+    .table {
+      -webkit-box-shadow: -20px 20px 0px 0px rgba(206, 184, 171, 1);
+      -moz-box-shadow: -20px 20px 0px 0px rgba(206, 184, 171, 1);
+      box-shadow: -20px 20px 0px 0px rgba(206, 184, 171, 1);
+      margin-bottom: 40px;
     
+    }
     h2 {
         font-weight: 600;
         text-align: center;
@@ -241,11 +252,16 @@ box-shadow: 24px 24px 0px 0px #ceb8ab;
 
 .zabiegi {
     text-align: center;
+    .zabiegi-info {
+      margin-top: 50px;
+      -webkit-box-shadow: 20px 20px 0px 0px rgba(206, 184, 171, 1);
+-moz-box-shadow: 20px 20px 0px 0px rgba(206, 184, 171, 1);
+box-shadow: 20px 20px 0px 0px rgba(206, 184, 171, 1);
+    }
     p {
         text-align: center;
         font-size: 19px;
         padding: 10px 30px;
-        margin-top: 60px;
     }
 }
 .zabiegi-item {
@@ -292,25 +308,35 @@ img {
 .col-lg-4 img:hover {
     -webkit-transform: scale(1.4);
             transform: scale(1.4);
-            -webkit-transition: 0.2s ease-in-out;
-            transition: 0.2s ease-in-out;
+            -webkit-transition: 0.4s ease-in-out;
+            transition: 0.4s ease-in-out;
   }
   
   .col-lg-4 img:hover {
     cursor: pointer;
     z-index: 4;
   }
-
+.reset::before {
+  display: none;
+  position: static;
+}
 .szkolenia-info {
         text-align: left;
         font-size: 19px;
         margin: 40px 0;
     }
+.under {
+  color: #ceb8ab;
 
+}
 .pink {
     background: #ceb8ab;
     padding: 10px;
     color: white;
+}
+.current {
+  font-weight: 800;
+  color: #ceb8ab !important;
 }
 
 .regulamin {
@@ -351,6 +377,34 @@ img {
     .col-sm-5 {
     margin-bottom: 40px;
 }}
+
+.icons i:hover {
+    cursor: pointer;
+}
+.icons img:hover {
+    cursor: pointer;
+}
+.icon-block {
+  display:inline-block;
+  text-align:center;
+  color: white;
+}
+
+.icon-block i {
+  display:block;
+  width:100%;
+}
+.icon-block img {
+  margin-left: 20px;
+}
+.icons a:hover {
+  -webkit-transform: scale(1.15);
+        transform: scale(1.15);
+    -webkit-transition: 0.2s ease-in-out;
+    transition: 0.2s ease-in-out;
+    cursor: pointer;
+    color: white;
+}
 
 
   @media (max-width: 360px) {
@@ -408,6 +462,9 @@ img {
     }
     .szkolenia-item {
         width: 93%;
+    }
+    .zabiegi-info {
+      margin: 50px 100px 20px 100px;
     }
     .middle-text {
         background: #ceb8ab;
