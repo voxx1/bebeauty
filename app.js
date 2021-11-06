@@ -16,6 +16,8 @@ $(document).ready(function() {
   $('.main-logo').css('display', 'none');
   $('.main-logo').fadeIn(1500);
 
+  $('.appear').css('display', 'none');
+  $('.appear').fadeIn(1500);
   
   $('.nav-item').css('display', 'none');
   $('.nav-item').fadeIn(3000);
@@ -55,7 +57,7 @@ $(document).ready(function() {
   forwards = true,
   skip_count = 0,
   skip_delay = 15,
-  speed = 70;
+  speed = 50;
 let wordflick = function () {
 setInterval(function () {
   if (forwards) {
