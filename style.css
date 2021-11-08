@@ -575,12 +575,16 @@ span.middle-line:after {
     height: 500px;
   }
 }
+@media (min-width: 992px) and (max-width: 1199px) {
+  .word {
+    font-size: 30px;
+  }
+}
 
 @media (min-width: 992px) {
   .szkolenia-info {
     width: 93%;
   }
-  
   .zabiegi-info {
     margin: 50px 100px 20px 100px;
   }
