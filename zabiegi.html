@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&family=Domine:wght@400;500;600;700&display=swap" rel="stylesheet">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="images/6.jpeg" />
     <title>BeBeauty | Piękno na wyciągnięcie ręki.</title>
@@ -17,10 +18,10 @@
   <div class="wrapper">
       <div class="main-logo-style">
         <a class="reset" href="index.html">
-          <img class="main-logo" src="images/6.1.jpeg">
+          <img class="main-logo table1" src="images/6.1.jpeg">
         </a>
       </div>
-        <nav class="navbar navbar-expand-lg navbar-light">
+        <nav class="navbar navbar-expand-lg navbar-light table1">
             <div class="container-fluid">
                   <button id="toggler" class="navbar-toggler mx-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
                   <span class="navbar-toggler-icon"></span>
@@ -60,22 +61,30 @@
             <div class="zabiegi">
               <div class="row justify-content-center bg-right table1">
                 <div class="zabiegi-item col-md-6">
-                    <img src="images/beauty1.jpg">
-                    <h1>Modelowanie ust</h1>
+                  <a class="reset" href="powiekszanie-ust.html">
+                    <img src="images/usta.jpg">
+                    <h1>Powiększanie ust</h1>
+                  </a>
                 </div>
-                <div class="zabiegi-item col-md-6">
-                    <img src="images/beauty2.jpg">
-                    <h1>Makijaż permanentny</h1>
+                <div data-aos="fade-left" data-aos-duration="3000" class="zabiegi-item col-md-6">
+                  <a class="reset" href="mezoterapia.html">
+                    <img src="images/mezoterapia.jpg">
+                    <h1>Mezoterapia igłowa</h1>
+                  </a>
                 </div>
               </div>
               <div class="row justify-content-center bg-left">
-                <div class="zabiegi-item col-md-6">
-                    <img class="fadedown" src="images/beauty3.jpg">
-                    <h1 class="fadedown">Pigmentacja medyczna</h1>
+                <div data-aos="fade-right" data-aos-duration="3000" class="zabiegi-item col-md-6">
+                  <a class="reset" href="stymulatory.html">
+                    <img src="images/stymulatory2.jpg">
+                    <h1>Stymulatory tkankowe</h1>
+                  </a>
                 </div>
                 <div class="zabiegi-item col-md-6">
-                    <img class="fadedown" src="images/beauty1.jpg">
-                    <h1 class="fadedown">Modelowanie ust</h1>
+                  <a class="reset" href="makijaz.html">
+                    <img src="images/makijaz2.jpg">
+                    <h1>Makijaż permanentny</h1>
+                  </a>
                 </div>
                 </div>
                 <div class="row justify-content-center bg-right">
@@ -83,13 +92,13 @@
                     <img class="fadedown" src="images/beauty2.jpg">
                     <h1 class="fadedown">Makijaż permanentny</h1>
                 </div>
-                <div class="zabiegi-item col-md-6">
+                <div data-aos="fade-left" data-aos-duration="3000" class="zabiegi-item col-md-6">
                     <img class="fadedown" src="images/beauty3.jpg">
                     <h1 class="fadedown">Pigmentacja medyczna</h1>
                 </div>
                 </div>
                 <div class="row justify-content-center bg-left">
-                  <div class="zabiegi-item col-md-6">
+                  <div data-aos="fade-right" data-aos-duration="3000" class="zabiegi-item col-md-6">
                     <img class="fadedown" src="images/beauty2.jpg">
                     <h1 class="fadedown">Makijaż permanentny</h1>
                 </div>
@@ -99,7 +108,7 @@
                 </div>
                 </div>
             <div class="zabiegi-info">
-              <h3>Dodatkowa informacja</h3>
+              <h3 class="fadedown">Dodatkowa informacja</h3>
                 <span class="middle-line fadedown">BeBeauty</span>
                 <p class="fadedown">Miejsce na dodatkowy tekst związany z zabiegami. Miejsce na dodatkowy tekst związany z zabiegami. Miejsce na dodatkowy tekst związany z zabiegami. Miejsce na dodatkowy tekst związany z zabiegami. Miejsce na dodatkowy tekst związany z zabiegami. </p>
             </div>
@@ -133,6 +142,8 @@
   </div>
   <script src="https://kit.fontawesome.com/aa377fcf50.js" crossorigin="anonymous"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
   <script src="app.js"></script>
 </body>
 </html>
