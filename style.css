@@ -17,6 +17,37 @@ body {
   text-align: center;
   margin-top: 50px;
 }
+.faderight {
+  animation: fadeInRight 2s ease-in-out;
+}
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translateX(300px);
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.faderight-long {
+  animation: fadeInRight 3s ease-in-out;
+}
+
+.fadeleft {
+  animation: fadeInLeft 2s ease-in-out;
+}
+
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-300px);
+  }
+  to {
+    opacity: 1;
+  }
+}
 
 .main-logo {
   width: 200px;
@@ -313,7 +344,7 @@ span.middle-line:after {
 }
 
 .zabiegi-item img {
-  height: 240px;
+  height: 230px;
   width: 340px;
 }
 
@@ -362,6 +393,9 @@ span.middle-line:after {
 .reset::before {
   display: none;
   position: static;
+}
+.reset:hover {
+  color: black;
 }
 
 .szkolenia-info {
@@ -484,7 +518,7 @@ span.middle-line:after {
 }
 
 @media (min-width: 600px) {
-  .zabiegi-item:hover {
+  .zabiegi-item a img:hover {
     -webkit-transform: scale(1.1);
     transform: scale(1.1);
     -webkit-transition: 0.2s ease-in-out;
@@ -509,6 +543,31 @@ span.middle-line:after {
     background: -webkit-gradient(linear, left top, right top, from(#fff), color-stop(80%, #fff), color-stop(80%, #C0C0C0));
     background: linear-gradient(to right, #fff 0%, #fff 80%, #C0C0C0 80%);
   }
+
+.zoom {
+  animation: zoom 5s infinite;
+  margin-bottom: 15px;
+}
+
+@-webkit-keyframes zoom {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.03);
+  }
+}
+
+@keyframes zoom {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.03);
+  }
+}
 }
 
 @media (min-width: 900px) {
@@ -566,6 +625,8 @@ span.middle-line:after {
 @media (min-width: 1200px) {
   .wave {
     margin-bottom: -90px;
+    margin-top: -40px;
+  
   }
   footer {
     margin-top: -100px;

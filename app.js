@@ -13,14 +13,6 @@ $(document).ready(function() {
     });
   });
   
-  $('.main-logo').css('display', 'none');
-  $('.main-logo').fadeIn(1500);
-
-  $('.appear').css('display', 'none');
-  $('.appear').fadeIn(1500);
-  
-  $('.nav-item').css('display', 'none');
-  $('.nav-item').fadeIn(3000);
   
   $('.carousel').css('display', 'none');
   $('.carousel').fadeIn(4500);
@@ -96,6 +88,9 @@ $(document).ready(function () {
 wordflick();
 });
 
+AOS.init();
 
+
+  
 
   

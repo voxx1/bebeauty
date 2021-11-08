@@ -7,6 +7,7 @@
     <script src="js/bootstrap.bundle.min.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&family=Domine:wght@400;500;600;700&display=swap" rel="stylesheet">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,15 +18,15 @@
   <div class="wrapper">
       <div class="main-logo-style">
         <a class="reset" href="index.html">
-          <img class="main-logo" src="images/6.1.jpeg">
+          <img class="main-logo faderight" src="images/6.1.jpeg">
         </a>
       </div>
         <nav class="navbar navbar-expand-lg navbar-light">
             <div class="container-fluid">
-                  <button id="toggler" class="navbar-toggler mx-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                  <button id="toggler" class="navbar-toggler mx-auto fadeleft" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
                   <span class="navbar-toggler-icon"></span>
                   </button>
-              <div class="collapse navbar-collapse justify-content-center" id="navbarTogglerDemo02">
+              <div class="collapse navbar-collapse justify-content-center fadeleft" id="navbarTogglerDemo02">
                 <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
                   <li class="nav-item">
                     <a class="nav-link active current" aria-current="page" href="index.html">Strona główna</a>
@@ -74,15 +75,15 @@
                 <div class="row mt-5 justify-content-around">
                     <div class="col-lg-5">
                       <div class="about bg-left">
-                          <h1 class="fadedown">O nas</h1>
-                          <span class="middle-line fadedown">BeBeauty</span>
-                          <p class="fadedown">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled. </p>
-                          <p class="fadedown">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled.</p>
+                          <h1 data-aos="fade-right" data-aos-duration="3000">O nas</h1>
+                          <span data-aos="fade-right" data-aos-duration="3000" class="middle-line">BeBeauty</span>
+                          <p data-aos="fade-right" data-aos-duration="3000" >Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled. </p>
+                          <p data-aos="fade-right" data-aos-duration="3000">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled.</p>
                       </div>
                   </div>
                   <div class="col-lg-6">
-                        <img class="about-img fadedown" src="images/salon3.jpg">
-                        <p class="about-img-info fadedown">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+                        <img class="about-img fadedown zoom" src="images/salon3.jpg">
+                        <p class="about-img-info" data-aos="fade-left" data-aos-duration="2000">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
 
                   </div>
               </div>
@@ -93,14 +94,14 @@
               <div class="row mt-5 flex-row-reverse justify-content-around">
                 <div class="col-lg-5">
                     <div class="about bg-right">
-                        <h1 class="fadedown">Nasz zespół</h1>
-                        <span class="middle-line fadedown">BeBeauty</span>
-                        <p class="fadedown">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled.</p>
-                        <p class="fadedown">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled.</p>
+                        <h1 data-aos="fade-left" data-aos-duration="3000">Nasz zespół</h1>
+                        <span data-aos="fade-left" data-aos-duration="3000" class="middle-line">BeBeauty</span>
+                        <p data-aos="fade-left" data-aos-duration="3000">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled.</p>
+                        <p data-aos="fade-left" data-aos-duration="3000">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled.</p>
                       </div>
                     </div>
                     <div class="col-lg-6">
-                        <img class="about-img fadedown" src="images/salon4.jpeg">
+                        <img class="about-img fadedown zoom" src="images/salon4.jpeg">
                     </div>
               </div>
           </main>
@@ -130,6 +131,7 @@
           </footer>
     </div>
     <script src="https://kit.fontawesome.com/aa377fcf50.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="app.js"></script>
 </body>
