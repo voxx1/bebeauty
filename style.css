@@ -128,6 +128,35 @@ a:hover::before {
 .welcome-title {
   font-size: 2.1rem;
 }
+.banner-img-usta {
+  background: url(images/usta6.jpg) no-repeat top right #ceb8ab;
+}
+.banner-img-mezoterapia {
+  background: url(images/mezoterapia4.jpg) no-repeat top right #ceb8ab;
+}
+.banner-img-stymulatory {
+  background: url(images/stymulatory3.jpg) no-repeat top right #ceb8ab;
+}
+.banner-img-makijaz {
+  background: url(images/makijaz4.jpg) no-repeat top right #ceb8ab;
+}
+.banner-img-bbglow {
+  background: url(images/bblog3.jpg) no-repeat top right #ceb8ab;
+}
+
+.banner {
+  min-height: 372px;
+  text-align: left !important;
+  background-size: 535px 100%;
+  padding-top: 151px !important;
+  padding-left: 15%;
+}
+.banner-text {
+  font-weight: 700;
+  font-size: 45px;
+  font-style: normal;
+  color: rgb(255, 255, 255);
+}
 
 .showme {
   opacity: 1 !important;
@@ -179,8 +208,9 @@ a:hover::before {
 }
 
 .about-img {
-  width: 100%;
+  width: 75%;
   height: auto;
+  margin-left: 10%;
   margin-top: 25px;
   -webkit-box-shadow: 24px 24px 0px 0px #ceb8ab;
   box-shadow: 24px 24px 0px 0px #ceb8ab;
@@ -508,6 +538,10 @@ span.middle-line:after {
 @media (max-width: 600px) {
   .contact-bottom {
     height: 450px;
+  }
+  .banner {
+    text-align: center !important;
+    padding: 3%;
   }
 }
 
