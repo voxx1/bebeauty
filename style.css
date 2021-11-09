@@ -453,7 +453,27 @@ span.middle-line:after {
   padding: 10px;
   font-size: 18px;
 }
-
+.raty h2 {
+  font-weight: 700;
+}
+.raty-img {
+  box-shadow: 20px 20px 0px 0px silver;
+}
+.btn-raty {
+  color: #ceb8ab;
+  background: white;
+  border: 2px solid #ceb8ab;
+}
+.btn-raty:hover {
+  color: white;
+  background:#ceb8ab;
+  border: 2px solid #ceb8ab;
+}
+.btn-outline-light.active {
+  color: #ceb8ab;
+  background: white;
+  border: 2px solid #ceb8ab;
+}
 .regulamin h2 {
   font-weight: 600;
   margin-bottom: 30px;
