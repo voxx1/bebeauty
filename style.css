@@ -11,6 +11,7 @@
 body {
   font-family: "Cardo", sans-serif;
   font-style: italic;
+  background-image: url(images/marbl22.jpg);
 }
 
 .main-logo-style {
@@ -50,8 +51,8 @@ body {
 }
 
 .main-logo {
-  width: 200px;
-  height: 150px;
+  width: 220px;
+  height: 160px;
   margin-bottom: 35px;
 }
 
@@ -198,7 +199,7 @@ a:hover::before {
 }
 
 .img1 {
-  background-image: url("images/beauty2.jpg");
+  background-image: url("images/beauty2.webp");
   height: 300px;
   -o-object-fit: cover;
   object-fit: cover;
@@ -236,7 +237,9 @@ a:hover::before {
   font-style: italic;
   font-size: 20px;
 }
-
+.table {
+  background: white;
+}
 span.middle-line:before {
   content: '';
   position: absolute;
@@ -456,9 +459,7 @@ span.middle-line:after {
 .raty h2 {
   font-weight: 700;
 }
-.raty-img {
-  box-shadow: 20px 20px 0px 0px silver;
-}
+
 .btn-raty {
   color: #ceb8ab;
   background: white;
