@@ -41,7 +41,7 @@ $(document).ready(function() {
   $('.table7').css('display', 'none');
   $('.table7').fadeIn(3700);
   
-  let words = ['Twoje centrum urody', 'Twoje miejsce odpoczynku', 'Twój własny czas', 'Jakikolwiek inny tekst :)'],
+  let words = ['Twoje centrum urody', 'Twoje miejsce odpoczynku', 'Twój własny czas', 'Twoje piękno', 'Twój relaks'],
   part,
   i = 0,
   offset = 0,
