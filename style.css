@@ -51,8 +51,8 @@ body {
 }
 
 .main-logo {
-  width: 220px;
-  height: 160px;
+  width: 250px;
+  height: 180px;
   margin-bottom: 35px;
 }
 
@@ -213,7 +213,6 @@ a:hover::before {
   height: auto;
   margin-left: 10%;
   margin-top: 25px;
-  -webkit-box-shadow: 24px 24px 0px 0px #ceb8ab;
   box-shadow: 24px 24px 0px 0px #ceb8ab;
 }
 
@@ -387,7 +386,8 @@ span.middle-line:after {
 }
 
 .szkolenia .szkolenia-item {
-  padding-bottom: 30px;
+  padding: 10px;
+  background:white;
 }
 
 .szkolenia p {
@@ -402,6 +402,7 @@ span.middle-line:after {
   max-width: 90%;
   height: auto;
   margin-top: 30px;
+  box-shadow: 24px 24px 0px 0px #ceb8ab;
 }
 
 .col-lg-4 img {
@@ -412,8 +413,8 @@ span.middle-line:after {
 }
 
 .col-lg-4 img:hover {
-  -webkit-transform: scale(1.4);
-  transform: scale(1.4);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
   -webkit-transition: 0.4s ease-in-out;
   transition: 0.4s ease-in-out;
 }
@@ -570,6 +571,9 @@ span.middle-line:after {
   .map {
     margin-top: 30px;
   }
+  .regulamin {
+    background: white;
+  }
 }
 
 @media (min-width: 600px) {
@@ -665,9 +669,16 @@ span.middle-line:after {
   }
 }
 
-@media (min-width: 740px) and (max-width: 991px) {
+@media (max-width: 540px) {
+  .col-lg-4 img:hover {
+    -webkit-transform: scale(1.0);
+    transform: scale(1.0);
+    
+  }
+}
+@media (min-width: 540px) and (max-width: 991px) {
   .col-lg-4 img {
-    width: 700px;
+    width: 480px;
     margin: 30px auto;
   }
 }
@@ -684,6 +695,11 @@ span.middle-line:after {
     margin-bottom: -90px;
     margin-top: -40px;
   
+  }
+  .col-lg-4 img:hover {
+    -webkit-transform: scale(1.3);
+    transform: scale(1.3);
+    
   }
   footer {
     margin-top: -100px;
