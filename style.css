@@ -402,7 +402,12 @@ span.middle-line:after {
   max-width: 90%;
   height: auto;
   margin-top: 30px;
+  margin-bottom: 30px;
   box-shadow: 24px 24px 0px 0px #ceb8ab;
+}
+.raty-img {
+  box-shadow: none !important;
+
 }
 
 .col-lg-4 img {
@@ -563,7 +568,11 @@ span.middle-line:after {
   }
   .banner {
     text-align: center !important;
-    padding: 3%;
+    padding: 5%;
+  }
+  .banner-text {
+    font-size: 40px;
+    
   }
 }
 
