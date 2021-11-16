@@ -72,7 +72,7 @@ body {
 }
 
 .carousel-item img {
-  height: 500px;
+  height: 400px;
   -o-object-fit: cover;
   object-fit: cover;
   background-size: cover;
@@ -640,7 +640,7 @@ span.middle-line:after {
 
 @media (min-width: 900px) {
   .carousel-item img {
-    height: 500px;
+    height: 546px;
   }
 }
 @media (min-width: 992px) and (max-width: 1199px) {
