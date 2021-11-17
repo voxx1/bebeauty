@@ -216,6 +216,11 @@ a:hover::before {
   padding-bottom: 15px;
 }
 
+.about h1 {
+  font-weight: 600;
+  margin-top: 30px;
+  font-size: 35px;
+}
 .about h2 {
   font-weight: 600;
   margin-top: 30px;
