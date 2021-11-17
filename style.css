@@ -416,7 +416,7 @@ span.middle-line:after {
   margin: 30px 0;
 }
 
-.zabiegi-item h1 {
+.zabiegi-item h2 {
   margin: 30px;
 }
 
@@ -481,7 +481,9 @@ span.middle-line:after {
 .reset:hover {
   color: black;
 }
-
+.reset {
+  color: #000 !important;
+}
 .szkolenia-info {
   text-align: left;
   font-size: 19px;
