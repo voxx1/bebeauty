@@ -607,7 +607,7 @@ span.middle-line:after {
 
 @media (max-width: 600px) {
   .contact-bottom {
-    height: 450px;
+    height: 290px;
   }
   .banner {
     text-align: center !important;
