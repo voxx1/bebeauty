@@ -9,7 +9,7 @@
 }
 
 body {
-  font-family: "Cardo", sans-serif;
+  font-family: "Cardo", sans-serif !important;
   font-style: italic;
   background-image: url(images/marbl22.jpg);
 }
@@ -216,7 +216,7 @@ a:hover::before {
   padding-bottom: 15px;
 }
 
-.about h1 {
+.about h2 {
   font-weight: 600;
   margin-top: 30px;
   font-size: 35px;
