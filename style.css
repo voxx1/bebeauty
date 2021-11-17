@@ -623,6 +623,9 @@ span.middle-line:after {
   .map {
     margin-top: 30px;
   }
+  .szkolenia img {
+    max-width: 100%;
+  }
   .regulamin {
     background: white;
   }
