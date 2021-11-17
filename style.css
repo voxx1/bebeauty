@@ -511,14 +511,14 @@ span.middle-line:after {
 }
 
 .btn-raty {
-  color: #ceb8ab;
+  color: #ceb8ab !important;
   background: white;
-  border: 2px solid #ceb8ab;
+  border: 2px solid #ceb8ab !important;
 }
 .btn-raty:hover {
-  color: white;
-  background:#ceb8ab;
-  border: 2px solid #ceb8ab;
+  color: white !important;
+  background:#ceb8ab !important;
+  border: 2px solid #ceb8ab !important;
 }
 .btn-outline-light.active {
   color: #ceb8ab;
