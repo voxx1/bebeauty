@@ -425,6 +425,7 @@ span.middle-line:after {
 
 .cennik {
   text-align: center;
+  display: none;
 }
 
 .cennik .table {
