@@ -296,12 +296,14 @@ a:hover::before {
 
 .parallax {
   position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+}
+
+.fa-envelope {
+  display: none !important;
 }
 
 .img1 {
@@ -598,6 +600,246 @@ span.middle-line:after {
   text-align: center;
 }
 
+
+
+
+
+
+
+
+
+
+.grid-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: #f5f4f4;
+  font-size: 13px;
+}
+
+@media screen and (min-width: 768px) {
+  .section {
+    padding: 4rem;
+ }
+}
+.grid {
+  display: grid;
+  grid-gap: 30px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-auto-rows: 150px;
+  grid-auto-flow: row dense;
+}
+.item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  box-sizing: border-box;
+  background: #0c9a9a;
+  color: #fff;
+  grid-column-start: auto;
+  grid-row-start: auto;
+  color: #fff;
+  background: url('https://images.unsplash.com/photo-1470124182917-cc6e71b22ecc?dpr=2&auto=format&fit=crop&w=1500&h=1000&q=80&cs=tinysrgb&crop=');
+  background-size: cover;
+  background-position: center;
+  transition: transform 0.3s ease-in-out;
+  counter-increment: item-counter;
+}
+.item:nth-of-type(n) {
+  background-image: url('images/szko2.jpeg');
+}
+.item:nth-of-type(2n) {
+  background-image: url('images/szko1.jpeg');
+}
+.item:nth-of-type(3n) {
+  background-image: url('images/szko3.jpeg');
+}
+.item:nth-of-type(4n) {
+  background-image: url('images/szko4.jpeg');
+}
+.item:nth-of-type(5n) {
+  background-image: url('images/szko5.jpeg');
+}
+.item:nth-of-type(6n) {
+  background-image: url('images/szko6.jpeg');
+}
+.item:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  opacity: 0.3;
+  transition: opacity 0.3s ease-in-out;
+}
+.item:hover:after {
+  opacity: 0;
+}
+.item--medium {
+  grid-row-end: span 2;
+}
+.item--large {
+  grid-row-end: span 3;
+}
+.item--full {
+  grid-column-end: auto;
+}
+@media screen and (min-width: 768px) {
+  .item--full {
+    grid-column: -1;
+    grid-row-end: span 2;
+ }
+}
+.item__details {
+  position: relative;
+  z-index: 1;
+  padding: 15px;
+  color: #444;
+  background: #fff;
+  text-transform: lowercase;
+  letter-spacing: 1px;
+  color: #828282;
+}
+.item__details:before {
+  content: counter(item-counter);
+  font-weight: bold;
+  font-size: 1.1rem;
+  padding-right: 0.5em;
+  color: #444;
+}
+
+
+.g-item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  box-sizing: border-box;
+  background: #0c9a9a;
+  color: #fff;
+  grid-column-start: auto;
+  grid-row-start: auto;
+  color: #fff;
+  background: url('https://images.unsplash.com/photo-1470124182917-cc6e71b22ecc?dpr=2&auto=format&fit=crop&w=1500&h=1000&q=80&cs=tinysrgb&crop=');
+  background-size: cover;
+  background-position: center;
+  transition: transform 0.3s ease-in-out;
+  counter-increment: item-counter;
+}
+.g-item:nth-of-type(1) {
+  background-image: url('images/img1.jpg');
+}
+.g-item:nth-of-type(2) {
+  background-image: url('images/img2.jpg');
+}
+.g-item:nth-of-type(3) {
+  background-image: url('images/galeria7.jpeg');
+}
+.g-item:nth-of-type(4) {
+  background-image: url('images/img4.jpg');
+}
+.g-item:nth-of-type(5) {
+  background-image: url('images/img5.jpg');
+}
+.g-item:nth-of-type(6) {
+  background-image: url('images/galeria1.jpeg');
+}
+.g-item:nth-of-type(7) {
+  background-image: url('images/img7.jpeg');
+}
+.g-item:nth-of-type(8) {
+  background-image: url('images/galeria5.jpeg');
+}
+.g-item:nth-of-type(9) {
+  background-image: url('images/img9.jpeg');
+}
+.g-item:nth-of-type(10) {
+  background-image: url('images/galeria2.jpeg');
+}
+.g-item:nth-of-type(11) {
+  background-image: url('images/galeria3.jpeg');
+}
+.g-item:nth-of-type(12) {
+  background-image: url('images/galeria4.jpeg');
+}
+.g-item:nth-of-type(13) {
+  background-image: url('images/img8.jpg');
+}
+.g-item:nth-of-type(14) {
+  background-image: url('images/galeria6.jpeg');
+}
+.g-item:nth-of-type(15) {
+  background-image: url('images/img3.jpg');
+}
+.g-item:nth-of-type(16) {
+  background-image: url('images/galeria8.jpeg');
+}
+.g-item:nth-of-type(17) {
+  background-image: url('images/galeria9.jpeg');
+}
+.g-item:nth-of-type(18) {
+  background-image: url('images/galeria10.jpeg');
+}
+.g-item:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  opacity: 0.3;
+  transition: opacity 0.3s ease-in-out;
+}
+.g-item:hover:after {
+  opacity: 0;
+}
+.g-item--medium {
+  grid-row-end: span 2;
+}
+.g-item--large {
+  grid-row-end: span 3;
+}
+.g-item--full {
+  grid-column-end: auto;
+}
+@media screen and (min-width: 768px) {
+  .g-item--full {
+    grid-column: -1;
+    grid-row-end: span 2;
+ }
+}
+.g-item__details {
+  position: relative;
+  z-index: 1;
+  padding: 15px;
+  color: #444;
+  background: #fff;
+  text-transform: lowercase;
+  letter-spacing: 1px;
+  color: #828282;
+}
+.g-item__details:before {
+  content: counter(item-counter);
+  font-weight: bold;
+  font-size: 1.1rem;
+  padding-right: 0.5em;
+  color: #444;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 .gallery {
   text-align: center;
 }
@@ -712,12 +954,12 @@ span.middle-line:after {
 
 @media (min-width: 768px) {
   .bg-left {
-    background: -webkit-gradient(linear, right top, left top, from(#fff), color-stop(80%, #fff), color-stop(80%, #C0C0C0));
-    background: linear-gradient(to left, #fff 0%, #fff 80%, #C0C0C0 80%);
+    background: -webkit-gradient(linear, right top, left top, from(#fff), color-stop(80%, #fff), color-stop(80%, #ceb8ab));
+    background: linear-gradient(to left, #fff 0%, #fff 96%, #ceb8ab 90%);
   }
   .bg-right {
-    background: -webkit-gradient(linear, left top, right top, from(#fff), color-stop(80%, #fff), color-stop(80%, #C0C0C0));
-    background: linear-gradient(to right, #fff 0%, #fff 80%, #C0C0C0 80%);
+    background: -webkit-gradient(linear, left top, right top, from(#fff), color-stop(80%, #fff), color-stop(80%, #ceb8ab));
+    background: linear-gradient(to right, #fff 0%, #fff 96%, #ceb8ab 90%);
   }
 
 .zoom {
