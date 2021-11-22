@@ -125,7 +125,11 @@ body {
   margin-right: auto;
   padding: 0 30px;
 }
-
+.usługi-bg {
+      background: white;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
 
 
 .carousel-item img {
