@@ -11,7 +11,7 @@
 body {
   font-family: "Cardo", sans-serif !important;
   font-style: italic;
-  background-image: url(images/blur_edges.png);
+  background-image: url(images/marbl22.jpg);
 }
 
 .main-logo-style {
@@ -146,7 +146,7 @@ body {
   -webkit-transform: translateY(-50%);
   transform: translateY(-50%);
   bottom: initial;
-  top: 55%;
+  top: 57%;
 }
 
 a {
@@ -941,9 +941,6 @@ span.middle-line:after {
   height: 24px;
   width: 24px;
 }
-.accordion-item > .title {
-  font-size: 19px;
-}
 }
 
 @media (max-width: 767px) {
@@ -1030,10 +1027,10 @@ span.middle-line:after {
     margin: 50px 100px 20px 100px;
   }
   .middle-text {
-    background: #ceb8ab;
+    border: 3px solid #ceb8ab;
     margin: 0 auto;
     width: 36%;
-    height: 120px;
+    height: 130px;
     opacity: 0.9;
     padding: 10px;
   }
@@ -1043,6 +1040,9 @@ span.middle-line:after {
   .word {
     display: block;
   }
+  .carousel-caption {
+    top: 52% !important;
+}
 }
 
 @media (max-width: 991px) {
