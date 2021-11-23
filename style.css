@@ -56,6 +56,8 @@ body {
   margin-bottom: 35px;
 }
 
+
+
 #toggler {
   margin-bottom: 40px;
   border: 1px solid #ceb8ab;
@@ -285,12 +287,12 @@ a:hover::before {
 .about h2 {
   font-weight: 600;
   margin-top: 30px;
-  font-size: 35px;
+  font-size: 30px;
 }
 
 .about p {
   padding: 0 20px;
-  font-size: 20px;
+  font-size: 18px;
   margin-top: 15px;
 }
 
@@ -919,8 +921,26 @@ span.middle-line:after {
   }
   .banner-text {
     font-size: 40px;
-    
   }
+  .contact-bottom h2 {
+    font-size: 18px;
+  }
+  .contact-bottom h4 {
+    font-size: 15px;
+  }
+  .contact-bottom h5 {
+    font-size: 13px;
+  }
+  .contact-bottom h6 {
+    font-size: 13px;
+  }
+  .fa-3x {
+    font-size: 1.5em !important;
+}
+.icon {
+  height: 24px;
+  width: 24px;
+}
 }
 
 @media (max-width: 767px) {
