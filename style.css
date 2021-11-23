@@ -941,6 +941,9 @@ span.middle-line:after {
   height: 24px;
   width: 24px;
 }
+.accordion-item > .title {
+  font-size: 19px;
+}
 }
 
 @media (max-width: 767px) {
