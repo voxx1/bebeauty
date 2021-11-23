@@ -345,19 +345,25 @@ a {
 
 .about {
   text-align: center;
-  background: -webkit-gradient(linear, left top, right top, from(#fff), color-stop(80%, #fff), color-stop(80%, #C0C0C0));
-  background: linear-gradient(to right, #fff 0%, #fff 80%, #C0C0C0 80%);
+  background: -webkit-gradient(linear, left top, right top, from(#fff), color-stop(80%, #fff), color-stop(80%, #ceb8ab));
+  background: linear-gradient(to right, #fff 0%, #fff 96%, #ceb8ab 90%);
   padding-bottom: 15px;
 
-  h1, h2 {
+  h1 {
     font-weight: 600;
     margin-top: 30px;
     font-size: 35px;
   }
 
+  h2 {
+    font-weight: 600;
+    margin-top: 30px;
+    font-size: 30px;
+  }
+
   p {
     padding: 0 20px;
-    font-size: 20px;
+    font-size: 18px;
     margin-top: 15px;
   }
 }
@@ -515,8 +521,8 @@ span.middle-line {
     font-weight: 600;
     text-align: center;
     padding: 30px 0;
-    background: -webkit-gradient(linear, left top, right top, from(#fff), color-stop(65%, #fff), color-stop(65%, #C0C0C0));
-    background: linear-gradient(to right, #fff 0%, #fff 65%, #C0C0C0 65%);
+    background: -webkit-gradient(linear, left top, right top, from(#fff), color-stop(80%, #fff), color-stop(80%, #ceb8ab));
+    background: linear-gradient(to right, #fff 0%, #fff 96%, #ceb8ab 90%);
   }
 
   .table tr td {
@@ -1018,6 +1024,29 @@ span.middle-line {
   .banner-text {
     font-size: 40px;
   }
+
+  .contact-bottom {
+    h2 {
+      font-size: 18px;
+    }
+
+    h4 {
+      font-size: 15px;
+    }
+
+    h5, h6 {
+      font-size: 13px;
+    }
+  }
+
+  .fa-3x {
+    font-size: 1.5em !important;
+  }
+
+  .icon {
+    height: 24px;
+    width: 24px;
+  }
 }
 
 @media (max-width: 767px) {
@@ -1182,5 +1211,3 @@ span.middle-line {
     width: 2000px;
   }
 }
-
-/*# sourceMappingURL=style.css.map */
